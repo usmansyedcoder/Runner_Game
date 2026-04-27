@@ -9,8 +9,7 @@ const Game = ({ playerName, onScoreUpdate }) => {
   const animationRef = useRef();
   const obstaclesRef = useRef([]);
   const frameRef = useRef(0);
-const apiUrl = 'http://localhost:5000';
-  // Game constants
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';  // Game constants
   const GRAVITY = 0.8;
   const JUMP_POWER = -12;
   const GROUND_Y = 350;

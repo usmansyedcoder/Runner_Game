@@ -65,7 +65,7 @@ function App() {
             
             {/* Replace DemoAd with AdBanner when you have AdSense */}
             <DemoAd />
-            {/* <AdBanner adSlot="1234567890" /> */}
+            {/* <AdBanner adSlot="YOUR_AD_SLOT_ID" /> */}
             
             <Leaderboard refresh={refreshLeaderboard} />
           </div>
