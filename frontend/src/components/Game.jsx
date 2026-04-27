@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 
-const Game = ({ playerName, onScoreUpdate }) => {
+  const Game = ({ playerName, onScoreUpdate }) => {
   const canvasRef = useRef(null);
   const [gameRunning, setGameRunning] = useState(false);
   const [score, setScore] = useState(0);
@@ -9,7 +9,7 @@ const Game = ({ playerName, onScoreUpdate }) => {
   const animationRef = useRef();
   const obstaclesRef = useRef([]);
   const frameRef = useRef(0);
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';  // Game constants
+  const apiUrl = 'https://runner-game-mu4v.vercel.app';  
   const GRAVITY = 0.8;
   const JUMP_POWER = -12;
   const GROUND_Y = 350;

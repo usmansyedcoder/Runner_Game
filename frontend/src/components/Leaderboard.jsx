@@ -5,7 +5,7 @@ const Leaderboard = ({ refresh }) => {
   const [scores, setScores] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const apiUrl = 'https://runner-game-mu4v.vercel.app';  
   useEffect(() => {
     fetchScores();
   }, [refresh]);
