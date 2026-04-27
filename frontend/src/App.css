@@ -1,0 +1,163 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-area {
+  flex: 2;
+  min-width: 500px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+}
+
+canvas {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.score-board {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.score-board h2 {
+  color: #ffd700;
+  font-size: 2em;
+}
+
+.game-controls {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.player-name-input {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.player-name-input input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.leaderboard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.leaderboard h3 {
+  color: #ffd700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.leaderboard ol {
+  list-style-position: inside;
+  color: white;
+}
+
+.leaderboard li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1em;
+}
+
+.game-over {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.game-over h3 {
+  color: #ff4444;
+  margin-bottom: 15px;
+}
+
+.ad-container {
+  margin: 20px 0;
+  text-align: center;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructions {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.instructions p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .game-area {
+    min-width: 100%;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
